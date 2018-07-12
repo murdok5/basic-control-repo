@@ -1,6 +1,5 @@
 class profile::base {
-
-notify { 'resource title':
-  message  => "${::foo}",
-}
+  file { '/etc/foo':
+    content => $::foo,
+  }
 }
