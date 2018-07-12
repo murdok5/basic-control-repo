@@ -1,5 +1,5 @@
 class profile::base {
   file { '/etc/foo':
-    content => ${::foo},
+    content => "${::foo}",
   }
 }
